@@ -1,6 +1,6 @@
-# Semantic Search Engine with BERT and Vector Embeddings
+# Semantic Search Engine with Sentence Transformers and Vector Embeddings
 
-This project demonstrates how to build a **semantic search engine** using **BERT** (Bidirectional Encoder Representations from Transformers) and vector embeddings. 
+This project demonstrates how to build a **semantic search engine** using pre-trained transformer models with Hugging Face's `Sentence Transformers` library and vector embeddings. 
 Unlike traditional keyword-based search, semantic search understands the meaning behind queries and retrieves the most relevant results based on the context.
 
 <!--## Key Features
@@ -10,5 +10,4 @@ Unlike traditional keyword-based search, semantic search understands the meaning
 - **Easy to Use**: Simple API for indexing and querying documents.-->
 
 ## How it works?
-Input text (documents or queries) is converted into dense vector representations using BERT. These vector embeddings are then stored in a vector database for efficient retrieval.
-When a query is entered during search time, its embedding is compared with indexed document embeddings using cosine similarity and the most semantically similar documents are returned as search results.
+Input text (documents or queries) is converted into dense vector representations (also known as vector embeddings) using a transformer model. These vector embeddings are then stored in a vector database for efficient retrieval. When a query is entered during search time, its embedding is compared with indexed document embeddings using cosine similarity metric and the most semantically similar documents are returned as search results.
